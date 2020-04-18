@@ -1,71 +1,132 @@
-<html>
-   <head><meta charset="utf-8">
-   
-   
- </head>
-   
-   <style>
-    h1 {color:black;
-    font:italic 40px cursive;
-       position:fixed;
-       left:325px;
-      
-    }
-    body {background-color:lightgrey;
-}
-      #welcome{background:blue;
-         
-      }
-      	.login-form {
-		width: 340px;
-    	margin: 50px auto;
-	}
-    .login-form form {
-    	margin-bottom: 15px;
-        background: #f7f7f7;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-    .login-form h2 {
-        margin: 0 0 15px;
-    }
-    .form-control, .btn {
-        min-height: 38px;
-        border-radius: 2px;
-    }
-    .btn {        
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .btn, .form-control, .login-form, form{
-	    position:absolute;
-	    top:300px;}
-    
-    </style>
+    <!Doctype html>
+    <html>
+    <head><meta charset="utf-8">
+    <title>My web page</title>
+    </head>
+    <style> 
 
-   <body>
-      
-      <div id="welcome"><h1>Welcome to my web page</h1></div>
-      
-<div class="login-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-        <h2 class="text-center">Log in</h2>       
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Username" required="required">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" placeholder="Password" required="required">
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Log in</button>
-        </div>
-        <div class="clearfix">
-            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
-            <a href="#" class="pull-right">Forgot Password?</a>
-        </div>        
-    </form>
-    <p class="text-center"><a href="#">Create an Account</a></p>
-</div>
+    #cat{font-style: italic;}
+
+    .font{font-family:cursive;}
+
+    .nice-border{background-color:rgba(20, 204, 204, 0.671); 
+    
+    width:fit-content;
+
+    padding-right: 5px;
+
+    padding-left: 5px;
+
+    position:relative;
+
+    top:100px;
+
+    font-size:18px;
+
+    padding-top: 5px;
+
+    padding-bottom:5px;
+
+    color:rgb(23, 85, 69);
+
+
+     
+    }
+
+    #title{position:fixed;
+    
+    text-align: center;
+
+    background-color: rgb(16, 107, 107);
+
+    width:100%;
+    
+    }
+
+    .border{background-color:rgba(20, 204, 204, 0.671); 
+    
+    width:fit-content;
+
+    padding-right: 4px;
+
+    padding-left: 3px;
+
+    position:absolute;
+
+    top:400px;
+
+    font-size:18px;
+
+    color:rgb(23, 85, 69)
+
+    
+
+    
+
+
+    }
+
+    body{background-color:mediumaquamarine;
+
+
+    }
+
+    #sleeping-cat{position:absolute;
+
+    z-index:10;
+
+    left:600px;
+    
+    width:100px;
+
+    height:100px;
+
+    }
+
+
+
+
+
+
+
+    </style> 
+
+    <body>
+    
+    <div id="title"><h1 class="font">Welcome to my Web page</h1></div>
+
+    <div class="nice-border">
+
+    <h2 class="font">Here are three things I like to do:</h2>
+
+    <ul class="font">
+        <li>Play video games</li>
+        <li>Make cool web pages</li>
+        <li>Be with my cat <span id="cat">Simba</span></li>
+
+    </ul></div>
+
+    <div class="border">
+        
+    <h2 class="font">Here are a few things my cat likes to do</h2>
+
+    <ol class="font">
+        <li>Sleep</li>
+        <li>Eat</li>
+        <li>Wake me up at night</li>
+        
+    </ol>
+    
+    </div>
+
+    <img id="sleeping-cat" src="https://commons.wikimedia.org/wiki/File:Sleeping_cat_(8610440548).jpg" alt="sleeping cat">
+
+
+
+
+
+
+
 
 
 
